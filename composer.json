@@ -1,0 +1,64 @@
+{
+    "name": "foqat/yati",
+    "description": "Yii 2 Advanced Template Improved",
+    "keywords": ["yati", "yii2", "advanced", "foqat"],
+    "homepage": "http://foqat.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/foqat/yati/issues?state=open",
+        "forum": "http://www.foqat.com/forum/",
+        "wiki": "http://www.foqat.com/wiki/",
+        "source": "https://github.com/foqat/yati"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "yiisoft/yii2-jui": "~2.0.0",
+        "yiisoft/yii2-httpclient": "~2.0.0",
+        "yiisoft/yii2-imagine": "~2.0.0",
+        "mootensai/yii2-enhanced-gii": "dev-master",
+        "kartik-v/yii2-mpdf": "dev-master",
+        "kartik-v/yii2-tree-manager": "dev-master",
+        "kartik-v/yii2-helpers": "dev-master",
+        "kartik-v/yii2-widget-alert": "*",
+        "kartik-v/yii2-password": "@dev",
+        "kartik-v/yii2-widgets": "*",
+        "kartik-v/yii2-date-range": "dev-master",
+        "kartik-v/yii2-sortable-input": "dev-master",
+        "kartik-v/yii2-editable": "@dev",
+        "yii2mod/collection": "*",
+        "yii2mod/yii2-helpers": "*",
+        "yii2mod/yii2-scheduling": "*",
+        "aryelds/yii2-sweet-alert": "@dev",
+        "kdn/yii2-domain-validator": "*",
+        "codeonyii/yii2-at-least-validator": "^1.1",
+        "nepstor/yii2-datetime-compare-validator": "^2.0",
+        "chouaibi/yii2-blacklist-validator" : "dev-master",
+        "tpmanc/yii2-imagick": "*",
+        "faryshta/yii2-disable-submit-buttons": "dev-master"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "php init --env=Development --overwrite=n"
+    }
+}
