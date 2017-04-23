@@ -66,18 +66,29 @@ Scheduling - https://github.com/yii2mod/yii2-scheduling
 
 Disable Submit Buttons - https://github.com/Faryshta/yii2-disable-submit-buttons
 
+Admin LTE Template - https://github.com/almasaeed2010/AdminLTE
 
 All of the above modules are already enabled in the config files. If you don't like any of them, simply remove them
 from composer.json and run a composer update. Please read the respective documentation of above extensions to know their usage.
 
 
 How to Install YATI?
----------------
+--------------------
 1. git clone https://github.com/foqat/yati.git
 2. Set a cookie validation key in frontend and backend main-local.php.
-3. Run yii migrate if required.
+3. Change proper site path in htaccess if required.
+4. Run yii migrate if required.
 
 
 We will try our best to keep YATI updated with latest stable Yii2 releases.
 
 Your suggestions and complaints are welcome!
+
+
+Troubleshooter
+--------------
+
+Problem: Composer Update is not working.
+
+Solution: Make sure to run this in your terminal-
+composer global require "fxp/composer-asset-plugin:^1.3.1"

@@ -39,7 +39,8 @@
         "nepstor/yii2-datetime-compare-validator": "^2.0",
         "chouaibi/yii2-blacklist-validator" : "dev-master",
         "tpmanc/yii2-imagick": "*",
-        "faryshta/yii2-disable-submit-buttons": "dev-master"
+        "faryshta/yii2-disable-submit-buttons": "dev-master",
+        "almasaeed2010/adminlte": "~2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
