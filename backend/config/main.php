@@ -44,7 +44,11 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '<alias:\w+>' => 'site/<alias>',
+                '' => 'site/index',
+                '<action:(login|logout)>' => 'site/<action>',
+                '<controller:\w+>' => '<controller>/index',
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\w+>' => '<controller>/<action>',
             ],
         ],
     ],
