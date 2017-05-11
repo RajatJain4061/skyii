@@ -96,6 +96,7 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         ),
         'f' => 
         array (
+            'foqat\\facade\\' => 13,
             'faryshta\\' => 9,
         ),
         'c' => 
@@ -404,6 +405,10 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         'kartik\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/strength-meter',
+        ),
+        'foqat\\facade\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/foqat/yifa/src',
         ),
         'faryshta\\' => 
         array (

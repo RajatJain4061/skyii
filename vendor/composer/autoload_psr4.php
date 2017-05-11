@@ -67,6 +67,7 @@ return array(
     'kartik\\alert\\' => array($vendorDir . '/kartik-v/yii2-widget-alert'),
     'kartik\\affix\\' => array($vendorDir . '/kartik-v/yii2-widget-affix'),
     'kartik\\' => array($vendorDir . '/kartik-v/strength-meter'),
+    'foqat\\facade\\' => array($vendorDir . '/foqat/yifa/src'),
     'faryshta\\' => array($vendorDir . '/faryshta/yii2-disable-submit-buttons'),
     'creocoder\\nestedsets\\' => array($vendorDir . '/creocoder/yii2-nested-sets/src'),
     'codeonyii\\yii2validators\\' => array($vendorDir . '/codeonyii/yii2-at-least-validator'),

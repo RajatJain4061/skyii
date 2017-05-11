@@ -509,4 +509,13 @@ return array (
       '@kartik/daterange' => $vendorDir . '/kartik-v/yii2-date-range',
     ),
   ),
+  'foqat/yifa' => 
+  array (
+    'name' => 'foqat/yifa',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@foqat/facade' => $vendorDir . '/foqat/yifa/src',
+    ),
+  ),
 );
