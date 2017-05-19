@@ -318,16 +318,6 @@ return array (
       '@mootensai/relation' => $vendorDir . '/mootensai/yii2-relation-trait',
     ),
   ),
-  'mootensai/yii2-enhanced-gii' => 
-  array (
-    'name' => 'mootensai/yii2-enhanced-gii',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@mootensai/enhancedgii' => $vendorDir . '/mootensai/yii2-enhanced-gii',
-    ),
-    'bootstrap' => 'mootensai\\enhancedgii\\Bootstrap',
-  ),
   'creocoder/yii2-nested-sets' => 
   array (
     'name' => 'creocoder/yii2-nested-sets',
@@ -464,15 +454,6 @@ return array (
     ),
     'bootstrap' => 'yii2mod\\scheduling\\Bootstrap',
   ),
-  'faryshta/yii2-disable-submit-buttons' => 
-  array (
-    'name' => 'faryshta/yii2-disable-submit-buttons',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@faryshta' => $vendorDir . '/faryshta/yii2-disable-submit-buttons',
-    ),
-  ),
   'yiisoft/yii2-swiftmailer' => 
   array (
     'name' => 'yiisoft/yii2-swiftmailer',
@@ -516,6 +497,25 @@ return array (
     'alias' => 
     array (
       '@foqat/facade' => $vendorDir . '/foqat/yifa/src',
+    ),
+  ),
+  'mootensai/yii2-enhanced-gii' => 
+  array (
+    'name' => 'mootensai/yii2-enhanced-gii',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@mootensai/enhancedgii' => $vendorDir . '/mootensai/yii2-enhanced-gii',
+    ),
+    'bootstrap' => 'mootensai\\enhancedgii\\Bootstrap',
+  ),
+  'faryshta/yii2-disable-submit-buttons' => 
+  array (
+    'name' => 'faryshta/yii2-disable-submit-buttons',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@faryshta' => $vendorDir . '/faryshta/yii2-disable-submit-buttons',
     ),
   ),
 );

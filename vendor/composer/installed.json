@@ -896,60 +896,6 @@
         "description": "Automatic BASH completion for Symfony Console Component based applications."
     },
     {
-        "name": "sebastian/diff",
-        "version": "1.4.1",
-        "version_normalized": "1.4.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sebastianbergmann/diff.git",
-            "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/13edfd8706462032c2f52b4b862974dd46b71c9e",
-            "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.8"
-        },
-        "time": "2015-12-08 07:14:41",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kore Nordmann",
-                "email": "mail@kore-nordmann.de"
-            },
-            {
-                "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de"
-            }
-        ],
-        "description": "Diff implementation",
-        "homepage": "https://github.com/sebastianbergmann/diff",
-        "keywords": [
-            "diff"
-        ]
-    },
-    {
         "name": "sebastian/recursion-context",
         "version": "1.0.5",
         "version_normalized": "1.0.5.0",
@@ -2177,99 +2123,6 @@
         ]
     },
     {
-        "name": "codeception/base",
-        "version": "2.2.10",
-        "version_normalized": "2.2.10.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Codeception/base.git",
-            "reference": "99142344c1c3ea147d2908473ee96bfef81a2349"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/base/zipball/99142344c1c3ea147d2908473ee96bfef81a2349",
-            "reference": "99142344c1c3ea147d2908473ee96bfef81a2349",
-            "shasum": ""
-        },
-        "require": {
-            "behat/gherkin": "~4.4.0",
-            "ext-json": "*",
-            "ext-mbstring": "*",
-            "guzzlehttp/psr7": "~1.0",
-            "php": ">=5.4.0 <8.0",
-            "phpunit/php-code-coverage": ">=2.2.4 <5.0",
-            "phpunit/phpunit": ">4.8.20 <6.0",
-            "sebastian/comparator": "~1.1",
-            "sebastian/diff": "^1.4",
-            "stecman/symfony-console-completion": "^0.7.0",
-            "symfony/browser-kit": ">=2.7 <4.0",
-            "symfony/console": ">=2.7 <4.0",
-            "symfony/css-selector": ">=2.7 <4.0",
-            "symfony/dom-crawler": ">=2.7.5 <4.0",
-            "symfony/event-dispatcher": ">=2.7 <4.0",
-            "symfony/finder": ">=2.7 <4.0",
-            "symfony/yaml": ">=2.7 <4.0"
-        },
-        "require-dev": {
-            "codeception/specify": "~0.3",
-            "facebook/graph-sdk": "~5.3",
-            "flow/jsonpath": "~0.2",
-            "league/factory-muffin": "^3.0",
-            "league/factory-muffin-faker": "^1.0",
-            "mongodb/mongodb": "^1.0",
-            "monolog/monolog": "~1.8",
-            "pda/pheanstalk": "~3.0",
-            "php-amqplib/php-amqplib": "~2.4",
-            "predis/predis": "^1.0",
-            "squizlabs/php_codesniffer": "~2.0",
-            "vlucas/phpdotenv": "^2.4.0"
-        },
-        "suggest": {
-            "codeception/specify": "BDD-style code blocks",
-            "codeception/verify": "BDD-style assertions",
-            "flow/jsonpath": "For using JSONPath in REST module",
-            "league/factory-muffin": "For DataFactory module",
-            "league/factory-muffin-faker": "For Faker support in DataFactory module",
-            "phpseclib/phpseclib": "for SFTP option in FTP Module",
-            "symfony/phpunit-bridge": "For phpunit-bridge support"
-        },
-        "time": "2017-03-25 03:34:50",
-        "bin": [
-            "codecept"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": []
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Codeception\\": "src\\Codeception",
-                "Codeception\\Extension\\": "ext"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Bodnarchuk",
-                "email": "davert@mail.ua",
-                "homepage": "http://codegyre.com"
-            }
-        ],
-        "description": "BDD-style testing framework",
-        "homepage": "http://codeception.com/",
-        "keywords": [
-            "BDD",
-            "TDD",
-            "acceptance testing",
-            "functional testing",
-            "unit testing"
-        ]
-    },
-    {
         "name": "codeception/verify",
         "version": "0.3.3",
         "version_normalized": "0.3.3.0",
@@ -3031,61 +2884,6 @@
             "plugin",
             "widget",
             "yii2"
-        ]
-    },
-    {
-        "name": "kartik-v/bootstrap-fileinput",
-        "version": "v4.3.9",
-        "version_normalized": "4.3.9.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-            "reference": "4aec9b00de25b4b3cca1f11ffbaa823c67c33590"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/4aec9b00de25b4b3cca1f11ffbaa823c67c33590",
-            "reference": "4aec9b00de25b4b3cca1f11ffbaa823c67c33590",
-            "shasum": ""
-        },
-        "time": "2017-04-02 18:38:08",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.3.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "kartik\\plugins\\fileinput\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Kartik Visweswaran",
-                "email": "kartikv2@gmail.com",
-                "homepage": "http://www.krajee.com/"
-            }
-        ],
-        "description": "An enhanced HTML 5 file input for Bootstrap 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
-        "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
-        "keywords": [
-            "ajax",
-            "bootstrap",
-            "delete",
-            "file",
-            "image",
-            "input",
-            "jquery",
-            "multiple",
-            "preview",
-            "progress",
-            "upload"
         ]
     },
     {
@@ -4068,57 +3866,6 @@
         ]
     },
     {
-        "name": "setasign/fpdi",
-        "version": "1.6.1",
-        "version_normalized": "1.6.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Setasign/FPDI.git",
-            "reference": "5b899b2b41463bf261aa69840fd30b50950a500c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Setasign/FPDI/zipball/5b899b2b41463bf261aa69840fd30b50950a500c",
-            "reference": "5b899b2b41463bf261aa69840fd30b50950a500c",
-            "shasum": ""
-        },
-        "suggest": {
-            "setasign/fpdf": "FPDI will extend this class but as it is also possible to use \"tecnickcom/tcpdf\" as an alternative there's no fixed dependency configured.",
-            "setasign/fpdi-fpdf": "Use this package to automatically evaluate dependencies to FPDF.",
-            "setasign/fpdi-tcpdf": "Use this package to automatically evaluate dependencies to TCPDF."
-        },
-        "time": "2015-11-30 10:53:14",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "filters/",
-                "fpdi.php",
-                "fpdf_tpl.php",
-                "fpdi_pdf_parser.php",
-                "pdf_context.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jan Slabon",
-                "email": "jan.slabon@setasign.com",
-                "homepage": "https://www.setasign.com"
-            }
-        ],
-        "description": "FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF. Because it is also possible to use FPDI with TCPDF, there are no fixed dependencies defined. Please see suggestions for packages which evaluates the dependencies automatically.",
-        "homepage": "https://www.setasign.com/fpdi",
-        "keywords": [
-            "fpdf",
-            "fpdi",
-            "pdf"
-        ]
-    },
-    {
         "name": "mpdf/mpdf",
         "version": "v6.1.3",
         "version_normalized": "6.1.3.0",
@@ -4423,67 +4170,6 @@
             "beforesave",
             "save",
             "uuid",
-            "yii2"
-        ]
-    },
-    {
-        "name": "mootensai/yii2-enhanced-gii",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/mootensai/yii2-enhanced-gii.git",
-            "reference": "af90e73d3f660200070dd01f0c442e41abc1a94b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/mootensai/yii2-enhanced-gii/zipball/af90e73d3f660200070dd01f0c442e41abc1a94b",
-            "reference": "af90e73d3f660200070dd01f0c442e41abc1a94b",
-            "shasum": ""
-        },
-        "require": {
-            "kartik-v/yii2-builder": "*",
-            "kartik-v/yii2-export": "*",
-            "kartik-v/yii2-grid": "*",
-            "kartik-v/yii2-tabs-x": "*",
-            "kartik-v/yii2-widgets": "*",
-            "mootensai/yii2-jsblock": "*",
-            "mootensai/yii2-optimistic-lock-validator": "*",
-            "mootensai/yii2-relation-trait": "*",
-            "mootensai/yii2-uuid-behavior": "*",
-            "yiisoft/yii2": "*"
-        },
-        "time": "2017-03-31 06:46:01",
-        "type": "yii2-extension",
-        "extra": {
-            "bootstrap": "mootensai\\enhancedgii\\Bootstrap"
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "mootensai\\enhancedgii\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Yohanes Candrajaya",
-                "email": "moo.tensai@gmail.com"
-            },
-            {
-                "name": "Jiwantoro Ndaru",
-                "email": "jiwanndaru@gmail.com"
-            }
-        ],
-        "description": "Generate Relational (hasMany, hasOne, belongsTo, & nested) Models & CRUD.",
-        "keywords": [
-            "Enhanced",
-            "gii",
-            "relation",
-            "yii",
             "yii2"
         ]
     },
@@ -5723,60 +5409,6 @@
         ]
     },
     {
-        "name": "faryshta/yii2-disable-submit-buttons",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Faryshta/yii2-disable-submit-buttons.git",
-            "reference": "5583e18c470d7f494f761dbd685658ec65e165e3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Faryshta/yii2-disable-submit-buttons/zipball/5583e18c470d7f494f761dbd685658ec65e165e3",
-            "reference": "5583e18c470d7f494f761dbd685658ec65e165e3",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "~2.0.0"
-        },
-        "time": "2016-05-09 21:00:14",
-        "type": "yii2-extension",
-        "extra": {
-            "asset-installer-paths": {
-                "npm-asset-library": "vendor/npm",
-                "bower-asset-library": "vendor/bower"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "faryshta\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Angel (Faryshta) Guevara",
-                "email": "angeldelcaos@gmail.com",
-                "homepage": "https://github.com/Faryshta",
-                "role": "Developer"
-            }
-        ],
-        "description": "Yii2 asset to automatically disable submit buttons on Yii2 ActiveForm.",
-        "homepage": "https://github.com/Faryshta/yii2-jquery-tagsinput",
-        "keywords": [
-            "activeform",
-            "disable",
-            "jquery",
-            "yii",
-            "yii2"
-        ]
-    },
-    {
         "name": "almasaeed2010/adminlte",
         "version": "v2.3.11",
         "version_normalized": "2.3.11.0",
@@ -6717,6 +6349,375 @@
             "yii",
             "yii2",
             "yii2-facades"
+        ]
+    },
+    {
+        "name": "sebastian/diff",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/diff.git",
+            "reference": "3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2",
+            "reference": "3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.3 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
+        },
+        "time": "2017-05-18 13:44:30",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kore Nordmann",
+                "email": "mail@kore-nordmann.de"
+            },
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            }
+        ],
+        "description": "Diff implementation",
+        "homepage": "https://github.com/sebastianbergmann/diff",
+        "keywords": [
+            "diff"
+        ]
+    },
+    {
+        "name": "codeception/base",
+        "version": "2.2.11",
+        "version_normalized": "2.2.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Codeception/base.git",
+            "reference": "eea7d29115390772363a4f7744396927b33bf4f3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Codeception/base/zipball/eea7d29115390772363a4f7744396927b33bf4f3",
+            "reference": "eea7d29115390772363a4f7744396927b33bf4f3",
+            "shasum": ""
+        },
+        "require": {
+            "behat/gherkin": "~4.4.0",
+            "ext-json": "*",
+            "ext-mbstring": "*",
+            "guzzlehttp/psr7": "~1.0",
+            "php": ">=5.4.0 <8.0",
+            "phpunit/php-code-coverage": ">=2.2.4 <6.0",
+            "phpunit/phpunit": ">4.8.20 <6.0",
+            "phpunit/phpunit-mock-objects": ">2.3 <5.0",
+            "sebastian/comparator": ">1.1 <3.0",
+            "sebastian/diff": "^1.4",
+            "stecman/symfony-console-completion": "^0.7.0",
+            "symfony/browser-kit": ">=2.7 <4.0",
+            "symfony/console": ">=2.7 <4.0",
+            "symfony/css-selector": ">=2.7 <4.0",
+            "symfony/dom-crawler": ">=2.7.5 <4.0",
+            "symfony/event-dispatcher": ">=2.7 <4.0",
+            "symfony/finder": ">=2.7 <4.0",
+            "symfony/yaml": ">=2.7 <4.0"
+        },
+        "require-dev": {
+            "codeception/specify": "~0.3",
+            "facebook/graph-sdk": "~5.3",
+            "flow/jsonpath": "~0.2",
+            "league/factory-muffin": "^3.0",
+            "league/factory-muffin-faker": "^1.0",
+            "mongodb/mongodb": "^1.0",
+            "monolog/monolog": "~1.8",
+            "pda/pheanstalk": "~3.0",
+            "php-amqplib/php-amqplib": "~2.4",
+            "predis/predis": "^1.0",
+            "squizlabs/php_codesniffer": "~2.0",
+            "vlucas/phpdotenv": "^2.4.0"
+        },
+        "suggest": {
+            "codeception/specify": "BDD-style code blocks",
+            "codeception/verify": "BDD-style assertions",
+            "flow/jsonpath": "For using JSONPath in REST module",
+            "league/factory-muffin": "For DataFactory module",
+            "league/factory-muffin-faker": "For Faker support in DataFactory module",
+            "phpseclib/phpseclib": "for SFTP option in FTP Module",
+            "symfony/phpunit-bridge": "For phpunit-bridge support"
+        },
+        "time": "2017-05-11 21:58:39",
+        "bin": [
+            "codecept"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": []
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Codeception\\": "src\\Codeception",
+                "Codeception\\Extension\\": "ext"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Bodnarchuk",
+                "email": "davert@mail.ua",
+                "homepage": "http://codegyre.com"
+            }
+        ],
+        "description": "BDD-style testing framework",
+        "homepage": "http://codeception.com/",
+        "keywords": [
+            "BDD",
+            "TDD",
+            "acceptance testing",
+            "functional testing",
+            "unit testing"
+        ]
+    },
+    {
+        "name": "kartik-v/bootstrap-fileinput",
+        "version": "v4.4.0",
+        "version_normalized": "4.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
+            "reference": "eea8e20f20302c52a346cd31ffe154561ee609a3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/eea8e20f20302c52a346cd31ffe154561ee609a3",
+            "reference": "eea8e20f20302c52a346cd31ffe154561ee609a3",
+            "shasum": ""
+        },
+        "time": "2017-05-13 22:52:09",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kartik\\plugins\\fileinput\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Kartik Visweswaran",
+                "email": "kartikv2@gmail.com",
+                "homepage": "http://www.krajee.com/"
+            }
+        ],
+        "description": "An enhanced HTML 5 file input for Bootstrap 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
+        "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+        "keywords": [
+            "ajax",
+            "bootstrap",
+            "delete",
+            "file",
+            "image",
+            "input",
+            "jquery",
+            "multiple",
+            "preview",
+            "progress",
+            "upload"
+        ]
+    },
+    {
+        "name": "setasign/fpdi",
+        "version": "1.6.2",
+        "version_normalized": "1.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Setasign/FPDI.git",
+            "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Setasign/FPDI/zipball/a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+            "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+            "shasum": ""
+        },
+        "suggest": {
+            "setasign/fpdf": "FPDI will extend this class but as it is also possible to use \"tecnickcom/tcpdf\" as an alternative there's no fixed dependency configured.",
+            "setasign/fpdi-fpdf": "Use this package to automatically evaluate dependencies to FPDF.",
+            "setasign/fpdi-tcpdf": "Use this package to automatically evaluate dependencies to TCPDF."
+        },
+        "time": "2017-05-11 14:25:49",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "filters/",
+                "fpdi.php",
+                "fpdf_tpl.php",
+                "fpdi_pdf_parser.php",
+                "pdf_context.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Slabon",
+                "email": "jan.slabon@setasign.com",
+                "homepage": "https://www.setasign.com"
+            }
+        ],
+        "description": "FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF. Because it is also possible to use FPDI with TCPDF, there are no fixed dependencies defined. Please see suggestions for packages which evaluates the dependencies automatically.",
+        "homepage": "https://www.setasign.com/fpdi",
+        "keywords": [
+            "fpdf",
+            "fpdi",
+            "pdf"
+        ]
+    },
+    {
+        "name": "mootensai/yii2-enhanced-gii",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mootensai/yii2-enhanced-gii.git",
+            "reference": "1a8b0cee32b96d21272783d6e04dcef6f6f8d54d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mootensai/yii2-enhanced-gii/zipball/1a8b0cee32b96d21272783d6e04dcef6f6f8d54d",
+            "reference": "1a8b0cee32b96d21272783d6e04dcef6f6f8d54d",
+            "shasum": ""
+        },
+        "require": {
+            "kartik-v/yii2-builder": "*",
+            "kartik-v/yii2-export": "*",
+            "kartik-v/yii2-grid": "*",
+            "kartik-v/yii2-tabs-x": "*",
+            "kartik-v/yii2-widgets": "*",
+            "mootensai/yii2-jsblock": "*",
+            "mootensai/yii2-optimistic-lock-validator": "*",
+            "mootensai/yii2-relation-trait": "*",
+            "mootensai/yii2-uuid-behavior": "*",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2017-05-17 14:42:34",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "mootensai\\enhancedgii\\Bootstrap"
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "mootensai\\enhancedgii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Yohanes Candrajaya",
+                "email": "moo.tensai@gmail.com"
+            },
+            {
+                "name": "Jiwantoro Ndaru",
+                "email": "jiwanndaru@gmail.com"
+            }
+        ],
+        "description": "Generate Relational (hasMany, hasOne, belongsTo, & nested) Models & CRUD.",
+        "keywords": [
+            "Enhanced",
+            "gii",
+            "relation",
+            "yii",
+            "yii2"
+        ]
+    },
+    {
+        "name": "faryshta/yii2-disable-submit-buttons",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Faryshta/yii2-disable-submit-buttons.git",
+            "reference": "6f1e38ae6609cab3d8a9773a26a10bf7cca74f80"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Faryshta/yii2-disable-submit-buttons/zipball/6f1e38ae6609cab3d8a9773a26a10bf7cca74f80",
+            "reference": "6f1e38ae6609cab3d8a9773a26a10bf7cca74f80",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "~2.0.0"
+        },
+        "time": "2017-05-10 21:38:29",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "faryshta\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Angel (Faryshta) Guevara",
+                "email": "angeldelcaos@gmail.com",
+                "homepage": "https://github.com/Faryshta",
+                "role": "Developer"
+            }
+        ],
+        "description": "Yii2 asset to automatically disable submit buttons on Yii2 ActiveForm.",
+        "homepage": "https://github.com/Faryshta/yii2-jquery-tagsinput",
+        "keywords": [
+            "activeform",
+            "disable",
+            "jquery",
+            "yii",
+            "yii2"
         ]
     }
 ]
