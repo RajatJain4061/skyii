@@ -5,6 +5,9 @@
 </IfModule>
 
 <IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} ^/yati/api/v1
+    RewriteRule ^.*$ api/web/v1/index.php [L]
+
     RewriteCond %{REQUEST_URI} ^/yati/(admin)
     RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
     RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]

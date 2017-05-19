@@ -1,7 +1,17 @@
 YATI (Yii2 Advanced Template Improved)
 ======================================
-YATI is a skeleton for Yii2 which is inherited from Yii2 Advanced template. The default Yii2 Advanced template
-is good but to make it production ready, you will have to put some efforts. Our aim is to minimize these efforts and make life easy.
+YATI is a skeleton for Yii2 which is inherited from Yii2 Advanced template.
+
+The default Yii2 Advanced template is good but to make it production ready, you will have to put some efforts.
+
+Our aim is to minimize these efforts and make your life easy and painless.
+
+YATI includes a lot of features out of the box which you would be installing manually after using the default Yii2 templates.
+
+Why should you do that? Why waste your time setting up everything from plugins to pretty URL and API structure if you can get it all together in one package?
+
+If you have any suggestions or complaints, feel free to email me at- pankaj [at] foqat [dot] com
+
 
 Why YATI?
 ---------
@@ -9,13 +19,17 @@ Why YATI?
 2. Backend can be accessed by /admin.
 3. Gii is enabled for frontend and backend.
 4. Debug bar is enabled for frontend and backend.
-5. General used extensions are pre-installed.
+5. Commonly used extensions are pre-installed and ready to use.
+6. API structure and API versioning is readymade.
+7. JSON formatter is enabled out of the box.
+8. /web/ is removed from the URL for backend, frontend and api folder structure.
+
 
 All above features can save hours of work and frustration of developers.
 
 
 Pre-Installed-
----------------------
+---------------
 Yii2 Framework (2.0.11.2) - https://github.com/yiisoft/yii2
 
 Advanced Template - https://github.com/yiisoft/yii2-app-advanced
@@ -68,27 +82,285 @@ Disable Submit Buttons - https://github.com/Faryshta/yii2-disable-submit-buttons
 
 Admin LTE Template - https://github.com/almasaeed2010/AdminLTE
 
+Yii2 Facades (Yifa) - https://github.com/foqat/yifa
+
 All of the above modules are already enabled in the config files. If you don't like any of them, simply remove them
 from composer.json and run a composer update. Please read the respective documentation of above extensions to know their usage.
 
 
-How to Install YATI?
---------------------
-1. git clone https://github.com/foqat/yati.git
-2. Set a cookie validation key in frontend and backend main-local.php.
-3. If your project is installed in a root then remove /yati from htaccess. If it's in a subfolder then replace /yati with your folder name.
-4. Run yii migrate if required.
+Installation
+------------
+
+## Requirements
+
+The minimum requirement by this project template is that your Web server supports PHP 5.4.0.
+
+## Installing using Git Clone
+
+You can install this template with below command in your terminal:
+
+    git clone https://github.com/foqat/yati.git
 
 
-We will try our best to keep YATI updated with latest stable Yii2 releases.
+## Install from an Archive File
+
+Extract the archive file downloaded from this repository to your Web root.
+
+Then follow the instructions given below.
+
+
+## Preparing application
+
+After you have downloaded or ran git clone, you have to follow below steps to initialize the installed application.
+
+1. Execute the `init` command and select `dev` as environment.
+
+   ```
+   php /path/to/yii-application/init
+   ```
+
+   Otherwise, in production execute `init` in non-interactive mode.
+
+   ```
+   php /path/to/yii-application/init --env=Production --overwrite=All
+   ```
+
+2. Create a new database and adjust the `components['db']` configuration in `common/config/main-local.php` accordingly.
+
+3. Apply migrations with console command `yii migrate`.
+
+4. Set document roots of your web server:
+
+   - for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend.dev/`
+   - for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend.dev/`
+   - for api `/path/to/yii-application/api/web/` and using the URL `http://api.dev/`
+
+   For Apache it could be the following:
+
+       <VirtualHost *:80>
+           ServerName frontend.dev
+           ServerAlias 127.0.0.1
+           DocumentRoot /path/to/yii-application/frontend/web/
+           
+           <Directory "/path/to/yii-application/frontend/web/">
+               # use mod_rewrite for pretty URL support
+               RewriteEngine on
+               # If a directory or a file exists, use the request directly
+               RewriteCond %{REQUEST_FILENAME} !-f
+               RewriteCond %{REQUEST_FILENAME} !-d
+               # Otherwise forward the request to index.php
+               RewriteRule . index.php
+           </Directory>
+       </VirtualHost>
+       
+       <VirtualHost *:80>
+           ServerName backend.dev
+           ServerAlias 127.0.0.1
+           DocumentRoot /path/to/yii-application/backend/web/
+           
+           <Directory "/path/to/yii-application/backend/web/">
+               # use mod_rewrite for pretty URL support
+               RewriteEngine on
+               # If a directory or a file exists, use the request directly
+               RewriteCond %{REQUEST_FILENAME} !-f
+               RewriteCond %{REQUEST_FILENAME} !-d
+               # Otherwise forward the request to index.php
+               RewriteRule . index.php
+           </Directory>
+       </VirtualHost>
+	   
+	   <VirtualHost *:80>
+           ServerName api.dev
+           ServerAlias 127.0.0.1
+           DocumentRoot /path/to/yii-application/api/web/
+           
+           <Directory "/path/to/yii-application/api/web/">
+               # use mod_rewrite for pretty URL support
+               RewriteEngine on
+               # If a directory or a file exists, use the request directly
+               RewriteCond %{REQUEST_FILENAME} !-f
+               RewriteCond %{REQUEST_FILENAME} !-d
+               # Otherwise forward the request to index.php
+               RewriteRule . index.php
+           </Directory>
+       </VirtualHost>
+
+   For nginx:
+
+       server {
+           charset utf-8;
+           client_max_body_size 128M;
+       
+           listen 80; ## listen for ipv4
+           #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
+       
+           server_name frontend.dev;
+           root        /path/to/yii-application/frontend/web/;
+           index       index.php;
+       
+           access_log  /path/to/yii-application/log/frontend-access.log;
+           error_log   /path/to/yii-application/log/frontend-error.log;
+       
+           location / {
+               # Redirect everything that isn't a real file to index.php
+               try_files $uri $uri/ /index.php?$args;
+           }
+       
+           # uncomment to avoid processing of calls to non-existing static files by Yii
+           #location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
+           #    try_files $uri =404;
+           #}
+           #error_page 404 /404.html;
+       
+           location ~ \.php$ {
+               include fastcgi_params;
+               fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+               fastcgi_pass   127.0.0.1:9000;
+               #fastcgi_pass unix:/var/run/php5-fpm.sock;
+               try_files $uri =404;
+           }
+       
+           location ~ /\.(ht|svn|git) {
+               deny all;
+           }
+       }
+        
+       server {
+           charset utf-8;
+           client_max_body_size 128M;
+       
+           listen 80; ## listen for ipv4
+           #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
+       
+           server_name backend.dev;
+           root        /path/to/yii-application/backend/web/;
+           index       index.php;
+       
+           access_log  /path/to/yii-application/log/backend-access.log;
+           error_log   /path/to/yii-application/log/backend-error.log;
+       
+           location / {
+               # Redirect everything that isn't a real file to index.php
+               try_files $uri $uri/ /index.php?$args;
+           }
+       
+           # uncomment to avoid processing of calls to non-existing static files by Yii
+           #location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
+           #    try_files $uri =404;
+           #}
+           #error_page 404 /404.html;
+       
+           location ~ \.php$ {
+               include fastcgi_params;
+               fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+               fastcgi_pass   127.0.0.1:9000;
+               #fastcgi_pass unix:/var/run/php5-fpm.sock;
+               try_files $uri =404;
+           }
+       
+           location ~ /\.(ht|svn|git) {
+               deny all;
+           }
+       }
+
+	   server {
+           charset utf-8;
+           client_max_body_size 128M;
+       
+           listen 80; ## listen for ipv4
+           #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
+       
+           server_name api.dev;
+           root        /path/to/yii-application/api/web/;
+           index       index.php;
+       
+           access_log  /path/to/yii-application/log/api-access.log;
+           error_log   /path/to/yii-application/log/api-error.log;
+       
+           location / {
+               # Redirect everything that isn't a real file to index.php
+               try_files $uri $uri/ /index.php?$args;
+           }
+       
+           # uncomment to avoid processing of calls to non-existing static files by Yii
+           #location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
+           #    try_files $uri =404;
+           #}
+           #error_page 404 /404.html;
+       
+           location ~ \.php$ {
+               include fastcgi_params;
+               fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+               fastcgi_pass   127.0.0.1:9000;
+               #fastcgi_pass unix:/var/run/php5-fpm.sock;
+               try_files $uri =404;
+           }
+       
+           location ~ /\.(ht|svn|git) {
+               deny all;
+           }
+       }
+	   
+5. Change the hosts file to point the domain to your server.
+
+   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Linux: `/etc/hosts`
+
+   Add the following lines:
+
+   ```
+   127.0.0.1   frontend.dev
+   127.0.0.1   backend.dev
+   127.0.0.1   api.dev
+   ```
+
+To login into the application, you need to first sign up, with any of your email address, username and password.
+Then, you can login into the application with same email address and password at any time.
+
+Note: Set a cookie validation key in frontend and backend main-local.php. If it is already set then make sure to change it.
+
+Htaccess: If your project is installed in a root then remove /yati from htaccess. If it's in a subfolder then replace /yati with your folder name.
+
+
+We constantly update YATI with all latest stable Yii2 and included plugin releases.
 
 Your suggestions and complaints are welcome!
 
 
-Troubleshooter
---------------
 
-Problem: Composer Update is not working.
+Comparison
+----------
 
-Solution: Make sure to run this in your terminal-
+The following table compares the difference among the advanced template, basic template and YATI:
+
+
+| Feature  |  Basic  |  Advanced |  YATI |
+|---|:---:|:---:|:---:|
+| Project structure | ✓ | ✓ | ✓ |
+| Site controller | ✓ | ✓ | ✓ |
+| User login/logout | ✓ | ✓ | ✓ |
+| Forms  | ✓ | ✓ | ✓ |
+| DB connection  | ✓ | ✓ | ✓ |
+| Console command  | ✓ | ✓ | ✓ |
+| Asset bundle  | ✓ | ✓ | ✓ |
+| Codeception tests  | ✓ | ✓ | ✓ |
+| Twitter Bootstrap  | ✓ | ✓ | ✓ |
+| Front-end and back-end apps  |    | ✓ | ✓ |
+| Ready to use User model |    | ✓ | ✓ |
+| User signup and password restore  |     | ✓ | ✓ |
+| Pretty Url |     |     | ✓ |
+| REST API |     |     | ✓ |
+| API versioning ready |     |     | ✓ |
+| XML or JSON response formatting |     |     | ✓ |
+| Custom error handling |     |     | ✓ |
+
+
+Troubleshooting
+---------------
+
+(1) My Composer Update is not working.
+- Make sure to run this in your terminal-
 composer global require "fxp/composer-asset-plugin:^1.3.1"
+
+(2) I am still having issue with setting it up.
+- Feel free to contact me or open an issue here.
