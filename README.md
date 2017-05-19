@@ -76,7 +76,7 @@ How to Install YATI?
 --------------------
 1. git clone https://github.com/foqat/yati.git
 2. Set a cookie validation key in frontend and backend main-local.php.
-3. Change proper site path in htaccess if required.
+3. If your project is installed in a root then remove /yati from htaccess. If it's in a subfolder then replace /yati with your folder name.
 4. Run yii migrate if required.
 
 
