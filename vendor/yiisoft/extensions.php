@@ -48,15 +48,6 @@ return array (
       '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base',
     ),
   ),
-  'kartik-v/yii2-tabs-x' => 
-  array (
-    'name' => 'kartik-v/yii2-tabs-x',
-    'version' => '1.2.3.0',
-    'alias' => 
-    array (
-      '@kartik/tabs' => $vendorDir . '/kartik-v/yii2-tabs-x',
-    ),
-  ),
   'kartik-v/yii2-widget-typeahead' => 
   array (
     'name' => 'kartik-v/yii2-widget-typeahead',
@@ -228,15 +219,6 @@ return array (
       '@kartik/widgets' => $vendorDir . '/kartik-v/yii2-widgets',
     ),
   ),
-  'mootensai/yii2-optimistic-lock-validator' => 
-  array (
-    'name' => 'mootensai/yii2-optimistic-lock-validator',
-    'version' => '0.0.1.0',
-    'alias' => 
-    array (
-      '@mootensai/components' => $vendorDir . '/mootensai/yii2-optimistic-lock-validator',
-    ),
-  ),
   'kartik-v/yii2-dialog' => 
   array (
     'name' => 'kartik-v/yii2-dialog',
@@ -255,33 +237,6 @@ return array (
       '@kartik/sortable' => $vendorDir . '/kartik-v/yii2-sortable',
     ),
   ),
-  'kartik-v/yii2-grid' => 
-  array (
-    'name' => 'kartik-v/yii2-grid',
-    'version' => '3.1.3.0',
-    'alias' => 
-    array (
-      '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid',
-    ),
-  ),
-  'kartik-v/yii2-dynagrid' => 
-  array (
-    'name' => 'kartik-v/yii2-dynagrid',
-    'version' => '1.4.5.0',
-    'alias' => 
-    array (
-      '@kartik/dynagrid' => $vendorDir . '/kartik-v/yii2-dynagrid',
-    ),
-  ),
-  'kartik-v/yii2-export' => 
-  array (
-    'name' => 'kartik-v/yii2-export',
-    'version' => '1.2.7.0',
-    'alias' => 
-    array (
-      '@kartik/export' => $vendorDir . '/kartik-v/yii2-export',
-    ),
-  ),
   'kartik-v/yii2-mpdf' => 
   array (
     'name' => 'kartik-v/yii2-mpdf',
@@ -289,33 +244,6 @@ return array (
     'alias' => 
     array (
       '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf',
-    ),
-  ),
-  'kartik-v/yii2-builder' => 
-  array (
-    'name' => 'kartik-v/yii2-builder',
-    'version' => '1.6.2.0',
-    'alias' => 
-    array (
-      '@kartik/builder' => $vendorDir . '/kartik-v/yii2-builder',
-    ),
-  ),
-  'mootensai/yii2-jsblock' => 
-  array (
-    'name' => 'mootensai/yii2-jsblock',
-    'version' => '1.0.0.0',
-    'alias' => 
-    array (
-      '@mootensai/components' => $vendorDir . '/mootensai/yii2-jsblock',
-    ),
-  ),
-  'mootensai/yii2-relation-trait' => 
-  array (
-    'name' => 'mootensai/yii2-relation-trait',
-    'version' => '1.1.4.0',
-    'alias' => 
-    array (
-      '@mootensai/relation' => $vendorDir . '/mootensai/yii2-relation-trait',
     ),
   ),
   'creocoder/yii2-nested-sets' => 
@@ -498,16 +426,6 @@ return array (
     array (
       '@foqat/facade' => $vendorDir . '/foqat/yifa/src',
     ),
-  ),
-  'mootensai/yii2-enhanced-gii' => 
-  array (
-    'name' => 'mootensai/yii2-enhanced-gii',
-    'version' => '9999999-dev',
-    'alias' => 
-    array (
-      '@mootensai/enhancedgii' => $vendorDir . '/mootensai/yii2-enhanced-gii',
-    ),
-    'bootstrap' => 'mootensai\\enhancedgii\\Bootstrap',
   ),
   'faryshta/yii2-disable-submit-buttons' => 
   array (
