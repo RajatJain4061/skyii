@@ -86,6 +86,7 @@ Yii2 Facades (Yifa) - https://github.com/foqat/yifa
 
 All of the above modules are already enabled in the config files. If you don't like any of them, simply remove them
 from composer.json and run a composer update. Please read the respective documentation of above extensions to know their usage.
+We have also included all these plugins in the vendor directory so they can be used without running composer update.
 
 
 Installation

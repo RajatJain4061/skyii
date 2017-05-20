@@ -30,6 +30,7 @@
         "kartik-v/yii2-date-range": "dev-master",
         "kartik-v/yii2-sortable-input": "dev-master",
         "kartik-v/yii2-editable": "@dev",
+        "mootensai/yii2-enhanced-gii": "dev-master",
         "yii2mod/collection": "*",
         "yii2mod/yii2-helpers": "*",
         "yii2mod/yii2-scheduling": "*",

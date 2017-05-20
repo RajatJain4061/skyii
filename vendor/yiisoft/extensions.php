@@ -436,4 +436,86 @@ return array (
       '@faryshta' => $vendorDir . '/faryshta/yii2-disable-submit-buttons',
     ),
   ),
+  'kartik-v/yii2-tabs-x' => 
+  array (
+    'name' => 'kartik-v/yii2-tabs-x',
+    'version' => '1.2.3.0',
+    'alias' => 
+    array (
+      '@kartik/tabs' => $vendorDir . '/kartik-v/yii2-tabs-x',
+    ),
+  ),
+  'mootensai/yii2-optimistic-lock-validator' => 
+  array (
+    'name' => 'mootensai/yii2-optimistic-lock-validator',
+    'version' => '0.0.1.0',
+    'alias' => 
+    array (
+      '@mootensai/components' => $vendorDir . '/mootensai/yii2-optimistic-lock-validator',
+    ),
+  ),
+  'kartik-v/yii2-grid' => 
+  array (
+    'name' => 'kartik-v/yii2-grid',
+    'version' => '3.1.3.0',
+    'alias' => 
+    array (
+      '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid',
+    ),
+  ),
+  'kartik-v/yii2-dynagrid' => 
+  array (
+    'name' => 'kartik-v/yii2-dynagrid',
+    'version' => '1.4.5.0',
+    'alias' => 
+    array (
+      '@kartik/dynagrid' => $vendorDir . '/kartik-v/yii2-dynagrid',
+    ),
+  ),
+  'kartik-v/yii2-export' => 
+  array (
+    'name' => 'kartik-v/yii2-export',
+    'version' => '1.2.7.0',
+    'alias' => 
+    array (
+      '@kartik/export' => $vendorDir . '/kartik-v/yii2-export',
+    ),
+  ),
+  'kartik-v/yii2-builder' => 
+  array (
+    'name' => 'kartik-v/yii2-builder',
+    'version' => '1.6.2.0',
+    'alias' => 
+    array (
+      '@kartik/builder' => $vendorDir . '/kartik-v/yii2-builder',
+    ),
+  ),
+  'mootensai/yii2-jsblock' => 
+  array (
+    'name' => 'mootensai/yii2-jsblock',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@mootensai/components' => $vendorDir . '/mootensai/yii2-jsblock',
+    ),
+  ),
+  'mootensai/yii2-relation-trait' => 
+  array (
+    'name' => 'mootensai/yii2-relation-trait',
+    'version' => '1.1.4.0',
+    'alias' => 
+    array (
+      '@mootensai/relation' => $vendorDir . '/mootensai/yii2-relation-trait',
+    ),
+  ),
+  'mootensai/yii2-enhanced-gii' => 
+  array (
+    'name' => 'mootensai/yii2-enhanced-gii',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@mootensai/enhancedgii' => $vendorDir . '/mootensai/yii2-enhanced-gii',
+    ),
+    'bootstrap' => 'mootensai\\enhancedgii\\Bootstrap',
+  ),
 );

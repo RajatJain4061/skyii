@@ -43,6 +43,13 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         array (
             'nepstor\\validators\\' => 19,
         ),
+        'm' => 
+        array (
+            'mootensai\\relation\\' => 19,
+            'mootensai\\enhancedgii\\' => 22,
+            'mootensai\\components\\' => 21,
+            'mootensai\\behaviors\\' => 20,
+        ),
         'k' => 
         array (
             'kdn\\yii2\\validators\\' => 20,
@@ -51,6 +58,7 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
             'kartik\\tree\\' => 12,
             'kartik\\touchspin\\' => 17,
             'kartik\\time\\' => 12,
+            'kartik\\tabs\\' => 12,
             'kartik\\switchinput\\' => 19,
             'kartik\\spinner\\' => 15,
             'kartik\\sortinput\\' => 17,
@@ -60,6 +68,7 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
             'kartik\\rating\\' => 14,
             'kartik\\range\\' => 13,
             'kartik\\popover\\' => 15,
+            'kartik\\plugins\\tabs\\' => 20,
             'kartik\\plugins\\popover\\' => 23,
             'kartik\\plugins\\fileinput\\' => 25,
             'kartik\\plugins\\depdrop\\' => 23,
@@ -67,15 +76,19 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
             'kartik\\mpdf\\' => 12,
             'kartik\\helpers\\' => 15,
             'kartik\\growl\\' => 13,
+            'kartik\\grid\\' => 12,
             'kartik\\form\\' => 12,
             'kartik\\file\\' => 12,
+            'kartik\\export\\' => 14,
             'kartik\\editable\\' => 16,
+            'kartik\\dynagrid\\' => 16,
             'kartik\\dialog\\' => 14,
             'kartik\\depdrop\\' => 15,
             'kartik\\datetime\\' => 16,
             'kartik\\daterange\\' => 17,
             'kartik\\date\\' => 12,
             'kartik\\color\\' => 13,
+            'kartik\\builder\\' => 15,
             'kartik\\base\\' => 12,
             'kartik\\alert\\' => 13,
             'kartik\\affix\\' => 13,
@@ -212,6 +225,23 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         array (
             0 => __DIR__ . '/..' . '/nepstor/yii2-datetime-compare-validator/src',
         ),
+        'mootensai\\relation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mootensai/yii2-relation-trait',
+        ),
+        'mootensai\\enhancedgii\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mootensai/yii2-enhanced-gii',
+        ),
+        'mootensai\\components\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mootensai/yii2-optimistic-lock-validator',
+            1 => __DIR__ . '/..' . '/mootensai/yii2-jsblock',
+        ),
+        'mootensai\\behaviors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mootensai/yii2-uuid-behavior',
+        ),
         'kdn\\yii2\\validators\\' => 
         array (
             0 => __DIR__ . '/..' . '/kdn/yii2-domain-validator/src',
@@ -235,6 +265,10 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         'kartik\\time\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-timepicker',
+        ),
+        'kartik\\tabs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-tabs-x',
         ),
         'kartik\\switchinput\\' => 
         array (
@@ -272,6 +306,10 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-popover-x',
         ),
+        'kartik\\plugins\\tabs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/bootstrap-tabs-x',
+        ),
         'kartik\\plugins\\popover\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/bootstrap-popover-x',
@@ -300,6 +338,10 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-growl',
         ),
+        'kartik\\grid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-grid',
+        ),
         'kartik\\form\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-activeform',
@@ -308,9 +350,17 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-fileinput',
         ),
+        'kartik\\export\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-export',
+        ),
         'kartik\\editable\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-editable',
+        ),
+        'kartik\\dynagrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-dynagrid',
         ),
         'kartik\\dialog\\' => 
         array (
@@ -335,6 +385,10 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
         'kartik\\color\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-colorinput',
+        ),
+        'kartik\\builder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-builder',
         ),
         'kartik\\base\\' => 
         array (
@@ -476,6 +530,10 @@ class ComposerStaticInita3220a38870342319cc25f0c2b8c7a00
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+            'PHPExcel' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpoffice/phpexcel/Classes',
             ),
         ),
         'I' => 
