@@ -19,7 +19,7 @@ Why YATI?
 2. Backend can be accessed by /admin.
 3. Gii is enabled for frontend and backend.
 4. Debug bar is enabled for frontend and backend.
-5. Commonly used extensions are added in composer file.
+5. Commonly used extensions are pre-installed and ready to use.
 6. API structure and API versioning is readymade.
 7. JSON formatter is enabled out of the box.
 8. /web/ is removed from the URL for backend, frontend and api folder structure.
@@ -28,21 +28,27 @@ Why YATI?
 All above features can save hours of work and frustration of developers.
 
 
-Core Plugins-
--------------
-
-Here is the list of core plugins and strucutre which should not be removed or else things will break.
-
-Yii2 Framework (2.0.12) - https://github.com/yiisoft/yii2
+Pre-Installed-
+---------------
+Yii2 Framework (2.0.11.2) - https://github.com/yiisoft/yii2
 
 Advanced Template - https://github.com/yiisoft/yii2-app-advanced
 
+Enhanced Gii - https://github.com/mootensai/yii2-enhanced-gii
 
-Pre-Added Plugins in Composer-
-==============================
+mPDF - https://github.com/kartik-v/yii2-mpdf
 
-Validator Plugins-
-------------------
+Tree Manager - https://github.com/kartik-v/yii2-tree-manager
+
+Collection - https://github.com/yii2mod/collection
+
+Helpers - https://github.com/yii2mod/yii2-helpers
+
+Kartik Helpers - https://github.com/kartik-v/yii2-helpers
+
+Widget Alert - https://github.com/kartik-v/yii2-widget-alert
+
+Sweet Alert - https://github.com/aryelds/yii2-sweet-alert
 
 Password Validator - https://github.com/kartik-v/yii2-password
 
@@ -54,11 +60,13 @@ Date Time Compare Validator - https://github.com/nepstor/yii2-datetime-compare-v
 
 Black List Validator - https://github.com/chouaibi/yii2-blacklist-validator
 
+Imagine - https://github.com/yiisoft/yii2-imagine
 
-Widget Plugins-
----------------
+jQuery UI - https://github.com/yiisoft/yii2-jui
 
-Tree Manager - https://github.com/kartik-v/yii2-tree-manager
+HTTP Client - https://github.com/yiisoft/yii2-httpclient
+
+Imagick - https://github.com/tpmanc/yii2-imagick
 
 Kartik Widgets - https://github.com/kartik-v/yii2-widgets
 
@@ -68,34 +76,6 @@ Kartik Sortable Input - https://github.com/kartik-v/yii2-sortable-input
 
 Kartik Editable - https://github.com/kartik-v/yii2-editable
 
-Widget Alert - https://github.com/kartik-v/yii2-widget-alert
-
-Sweet Alert - https://github.com/aryelds/yii2-sweet-alert
-
-jQuery UI - https://github.com/yiisoft/yii2-jui
-
-
-Images Plugins-
---------------
-
-Imagine - https://github.com/yiisoft/yii2-imagine
-
-Imagick - https://github.com/tpmanc/yii2-imagick
-
-
-Other Plugins-
---------------
-
-Enhanced Gii - https://github.com/mootensai/yii2-enhanced-gii
-
-Collection - https://github.com/yii2mod/collection
-
-Helpers - https://github.com/yii2mod/yii2-helpers
-
-Kartik Helpers - https://github.com/kartik-v/yii2-helpers
-
-HTTP Client - https://github.com/yiisoft/yii2-httpclient
-
 Scheduling - https://github.com/yii2mod/yii2-scheduling
 
 Disable Submit Buttons - https://github.com/Faryshta/yii2-disable-submit-buttons
@@ -104,11 +84,9 @@ Admin LTE Template - https://github.com/almasaeed2010/AdminLTE
 
 Yii2 Facades (Yifa) - https://github.com/foqat/yifa
 
-
 All of the above modules are already enabled in the config files. If you don't like any of them, simply remove them
-from composer.json and run a composer update.
-
-Please read the respective documentation of above extensions to know their usage.
+from composer.json and run a composer update. Please read the respective documentation of above extensions to know their usage.
+We have also included all these plugins in the vendor directory so they can be used without running composer update.
 
 
 Installation
@@ -323,10 +301,7 @@ After you have downloaded or ran git clone, you have to follow below steps to in
                deny all;
            }
        }
-
-Note: If your project is installed in a root then remove /yati from htaccess. If it's in a subfolder then replace /yati with your folder name.
-
-
+	   
 5. Change the hosts file to point the domain to your server.
 
    - Windows: `c:\Windows\System32\Drivers\etc\hosts`
@@ -340,18 +315,18 @@ Note: If your project is installed in a root then remove /yati from htaccess. If
    127.0.0.1   api.dev
    ```
 
-6. Update composer.
-   ```
-   php composer update
-   ```
-
-7. Set a cookie validation key in frontend and backend main-local.php. If it is already set then make sure to change it.
-
-
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
 
-All the suggestions and complaints are welcome!
+Note: Set a cookie validation key in frontend and backend main-local.php. If it is already set then make sure to change it.
+
+Htaccess: If your project is installed in a root then remove /yati from htaccess. If it's in a subfolder then replace /yati with your folder name.
+
+
+We constantly update YATI with all latest stable Yii2 and included plugin releases.
+
+Your suggestions and complaints are welcome!
+
 
 
 Comparison
@@ -381,22 +356,12 @@ The following table compares the difference among the advanced template, basic t
 | Custom error handling |     |     | ✓ |
 
 
-Current Branches-
-------------------
-
-master - Stable as much as possible
-
-dev-master - This is where we generally do the development
-
-
 Troubleshooting
 ---------------
 
-1. My Composer Update is not working.
-
-Make sure to run this in your terminal-
+(1) My Composer Update is not working.
+- Make sure to run this in your terminal-
 composer global require "fxp/composer-asset-plugin:^1.3.1"
 
-2. I am still having issue with setting it up.
-
-Feel free to contact me or open an issue here.
+(2) I am still having issue with setting it up.
+- Feel free to contact me or open an issue here.

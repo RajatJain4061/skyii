@@ -1,5 +1,6 @@
 <?php
 return [
+    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
@@ -11,6 +12,14 @@ return [
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@common/mail',
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.gmail.com',
+                'username' => 'smtp username here',
+                'password' => 'smtp password here',
+                'port' => '587',//'465',
+                'encryption' => 'tls',
+            ],
         ],
     ],
 ];
