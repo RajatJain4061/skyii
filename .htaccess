@@ -5,26 +5,26 @@
 </IfModule>
 
 <IfModule mod_rewrite.c>
-    RewriteCond %{REQUEST_URI} ^/yati/api/v1
+    RewriteCond %{REQUEST_URI} ^/pankaj/yati/api/v1
     RewriteRule ^.*$ api/web/v1/index.php [L]
 
-    RewriteCond %{REQUEST_URI} ^/yati/(admin)
+    RewriteCond %{REQUEST_URI} ^/pankaj/yati/(admin)
     RewriteRule ^admin/assets/(.*)$ backend/web/assets/$1 [L]
     RewriteRule ^admin/css/(.*)$ backend/web/css/$1 [L]
     RewriteRule ^admin/js/(.*)$ backend/web/js/$1 [L]
     RewriteRule ^admin/images/(.*)$ backend/web/images/$1 [L]
 
-    RewriteCond %{REQUEST_URI} !^/yati/backend/web/(assets|css|images)/
-    RewriteCond %{REQUEST_URI} ^/yati/(admin)
+    RewriteCond %{REQUEST_URI} !^/pankaj/yati/backend/web/(assets|css|images)/
+    RewriteCond %{REQUEST_URI} ^/pankaj/yati/(admin)
     RewriteRule ^.*$ backend/web/index.php [L]
 
-    RewriteCond %{REQUEST_URI} ^/yati/(assets|css|images)
+    RewriteCond %{REQUEST_URI} ^/pankaj/yati/(assets|css|images)
     RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
     RewriteRule ^js/(.*)$ frontend/web/js/$1 [L]
     RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
     RewriteRule ^images/(.*)$ frontend/web/images/$1 [L]
 
-    RewriteCond %{REQUEST_URI} !^/yati/(frontend|backend)/web/(assets|css|images)/
+    RewriteCond %{REQUEST_URI} !^/pankaj/yati/(frontend|backend)/web/(assets|css|images)/
     RewriteCond %{REQUEST_URI} !index.php
     RewriteCond %{REQUEST_FILENAME} !-f [OR]
     RewriteCond %{REQUEST_FILENAME} !-d

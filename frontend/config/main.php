@@ -44,9 +44,10 @@ return [
             'rules' => [
                 '' => 'site/index',
                 '<action:(signup|login|logout|about|contact)>' => 'site/<action>',
-                '<controller:\w+>' => '<controller>/index',
+                //'<controller:\w+>' => '<controller>/index',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
-                '<controller:\w+>/<action:\w+>/<id:\w+>' => '<controller>/<action>',
+                '<module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/view',
+                '<module:\w+>/<controller:\w+>/<action:\w+>/<id>' => '<module>/<controller>/<action>',
             ],
         ],
     ],
