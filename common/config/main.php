@@ -28,7 +28,7 @@ return [
             //'layout' => 'modules/user/views/layouts/main',
             'menus' => [
                 'assignment' => [
-                    'label' => 'Grant Access' // change label
+                    'label' => 'Grant Access'
                 ],
                 'route' => null,
             ],

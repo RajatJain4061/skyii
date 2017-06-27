@@ -6,10 +6,10 @@
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/foqat/yati/issues?state=open",
-        "forum": "http://www.foqat.com/forum/",
-        "wiki": "http://www.foqat.com/wiki/",
-        "source": "https://github.com/foqat/yati"
+        "issues": "https://github.com/foqat/skyii/issues?state=open",
+        "forum": "https://github.com/foqat/skyii/issues",
+        "wiki": "https://github.com/foqat/skyii/wiki",
+        "source": "https://github.com/foqat/skyii"
     },
     "minimum-stability": "stable",
     "require": {
@@ -20,7 +20,6 @@
         "yiisoft/yii2-jui": "~2.0.0",
         "yiisoft/yii2-httpclient": "~2.0.0",
         "yiisoft/yii2-imagine": "~2.0.0",
-        "foqat/yifa": "dev-master",
         "kartik-v/yii2-tree-manager": "dev-master",
         "kartik-v/yii2-helpers": "dev-master",
         "kartik-v/yii2-widget-alert": "*",
@@ -39,8 +38,7 @@
         "nepstor/yii2-datetime-compare-validator": "^2.0",
         "chouaibi/yii2-blacklist-validator" : "dev-master",
         "tpmanc/yii2-imagick": "*",
-        "faryshta/yii2-disable-submit-buttons": "dev-master",
-        "almasaeed2010/adminlte": "~2.0"
+        "faryshta/yii2-disable-submit-buttons": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
